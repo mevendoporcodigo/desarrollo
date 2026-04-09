@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Empresa de Desarrollo Web</title>
+
+<style>
+    body {
+        background-color: lightgrey;
+        margin: 0;
+        padding-top: 120px;
+        font-family: Arial;
+    }
+
+    .header {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 450px;
+        background: white;
+        border: 3px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+    }
+
+    .header img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    table {
+        width: 800px;
+        margin: auto;
+        background: white;
+    }
+
+    footer {
+        margin-top: 20px;
+        text-align: center;
+        background: white;
+        padding: 10px;
+        border-top: 3px solid black;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="header-top">
+        <img src="img/logo.png">
+        <h1>Empresa de Desarrollo Web</h1>
+    </div>
+
+    <!-- MENU -->
+    <ul class="menu">
+        <li><a href="#"><ion-icon name="home-outline"></ion-icon> Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+</div>
+
+<center>
+
+<table border="5">
+
+    <tr>
+        <td>
+            <h4>¿Quiénes somos?</h4>
+            <p>
+                Somos una empresa dedicada al desarrollo de páginas web modernas,
+                rápidas y adaptadas a cualquier tipo de negocio.
+            </p>
+        </td>
+
+        <td>
+            <h4>Información de la trabajadora</h4>
+            <p>Nombre: Gabriela Yael Soto Aleman</p>
+            <p>Email: gabrielasotoaleman16@gmail.com</p>
+            <p>Teléfono: 0986531427</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h2 style="text-align: center;">Servicios</h2>
+            <ol>
+                <li>Diseño web</li>
+                <li>Tiendas online</li>
+                <li>Aplicaciones web</li>
+            </ol>
+        </td>
+
+        <td>
+            <h2 style="text-align: center;">Ventajas</h2>
+            <ol>
+                <li>Diseño moderno</li>
+                <li>Seguridad</li>
+                <li>Soporte técnico</li>
+            </ol>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <h2>Formulario de Contacto</h2>
+
+            <form>
+                <div>
+                    <label for="nombre">Ingrese su nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="detalle">Motivo de contacto</label><br>
+                    <textarea id="detalle" name="detalle" rows="3" required></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </td>
+    </tr>
+
+</table>
+
+</center>
+
+<footer>
+    <div class="contenedor">
+        <p>© 2026 gabriela soto - derechos reservados</p>
+    </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
